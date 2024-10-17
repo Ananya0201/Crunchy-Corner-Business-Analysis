@@ -172,25 +172,56 @@ Following are the Dax expressions written to find various metrices:
 
 CY Sales = SUM(Actual[Net Revenue])
 
+![Screenshot 2024-10-17 122117](https://github.com/user-attachments/assets/43e94763-1a96-4317-8bd3-f4db0b446c65)
+
+
 CY Sales YTD = TOTALYTD([CY Sales],Dim_Date[End of Month Date],ALL(Dim_Date))
+
+![Screenshot 2024-10-17 122315](https://github.com/user-attachments/assets/59357c77-78ea-4aaf-837c-05fb5281c10d)
 
 PY Sales = CALCULATE([CY Sales],SAMEPERIODLASTYEAR(Dim_Date[End of Month Date].[Date]))
 
+![Screenshot 2024-10-17 122553](https://github.com/user-attachments/assets/bf96dd23-d4aa-4d8e-9a19-1e37ebfc3707)
+
+
 PY Sales YTD = CALCULATE([CY Sales YTD],SAMEPERIODLASTYEAR(Dim_Date[End of Month Date].[Date]))
+
+![Screenshot 2024-10-17 122714](https://github.com/user-attachments/assets/e9973761-310f-4bfc-a201-2fe391794291)
+
 
 YoY % change in sales revenue = DIVIDE([CY Sales]-[PY Sales],[PY Sales],BLANK())
 
+![Screenshot 2024-10-17 122831](https://github.com/user-attachments/assets/21078c1b-1806-464e-a4fd-d2604c3298ef)
+
+
 Yoy % change in sales revenue YTD = DIVIDE([CY Sales YTD]-[PY Sales YTD],[PY Sales YTD],0)*-1
+
+![Screenshot 2024-10-17 122917](https://github.com/user-attachments/assets/c81e79b8-95ff-4533-9450-385f364f0e64)
+
 
 Gross Profit Margin = DIVIDE([Total GP],[CY Sales],0)
 
+![Screenshot 2024-10-17 123151](https://github.com/user-attachments/assets/93afc516-110f-4766-a5af-11cac788195c)
+
+
 PAT % = DIVIDE([Actual Net Profit],[CY Sales],0)
+
+![Screenshot 2024-10-17 123233](https://github.com/user-attachments/assets/b8cbbeef-41e7-4cd1-81ec-d35587d156fb)
 
 Avg GP % Category = CALCULATE([Gross Profit Margin],ALLSELECTED(Dim_Product[Category]))
 
+![Screenshot 2024-10-17 123356](https://github.com/user-attachments/assets/ef851fe1-f39d-4e03-9a99-fa2aa2a8b9f3)
+
+
 Budget Variance% YOY = DIVIDE([CY Sales]-[Budgeted Sales],[Budgeted Sales],Blank())
 
+![Screenshot 2024-10-17 123518](https://github.com/user-attachments/assets/16970c67-6260-4503-89f1-47836da6e143)
+
+
 RM% = [Raw material]/[CY Sales]
+
+![Screenshot 2024-10-17 123603](https://github.com/user-attachments/assets/d76947a9-37fe-420c-ba06-a67f63b04776)
+
 
 -As per the KPI requirement, in the Performance analysis tab, A clustered bar chart was added to the report design area representing "Sales YoY", a donut chart was added to represent "CY Sales by Category". Next a Stacked Bar Chart was added to represent trend in "Net Revenue, Gross Profit, EBITDA, PAT yearly", a clustered column chart to Show Sales by Location & Channel and a clustered line and column chart to represent net sales by PAT% , EBITDA% and GP%.
 
