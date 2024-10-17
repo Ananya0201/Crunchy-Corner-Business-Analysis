@@ -1,4 +1,5 @@
-# Crunchy-Corner-Business-Analysis
+PS: Since the file is too big, i uploaded the PDF version of the file. Please click the link to see the interactive dashboard
+# Crunchy-Corner-Business-Analysis         
 ### About Company:
 Crunchy Corner is one of the largest Fast Foods restaurant chain in India, serving over millions of customer daily across various cities in India. With more than 1000 restaurants across 
 the country, they have some of the largest SKUs in the industry.
