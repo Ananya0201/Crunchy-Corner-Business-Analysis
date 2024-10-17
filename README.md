@@ -233,18 +233,11 @@ RM% = [Raw material]/[CY Sales]
 
 ### ●  Dashboard/report deployment:
 The report was then published to Power BI Service.
- 
- 
-
-#### Snapshot of Dashboard (Power BI Service)
+#### https://app.powerbi.com/groups/me/reports/22ec14e5-47f5-4dac-b07d-5b67c8b79ccd/ReportSection2da1fe2adc3720baa113?experience=power-bi
 
 
  
- 
-
- 
-
-#### ● Insights generation:
+ #### ● Insights generation:
 
 A 4 page report was created on Power BI Desktop & it was then published to Power BI Service.
 
